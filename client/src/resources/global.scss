@@ -1,0 +1,18 @@
+@mixin mobile{
+    @media(max-width: 620px){
+        @content
+    }
+}
+
+.primary{
+    background-color: rgb(32, 153, 32) !important;
+    color: white;
+    border: none;
+  }
+  
+.secondary{
+    background-color: #ffffff;
+    padding:5px 20px;
+    color: black !important;
+    border: none;
+  }

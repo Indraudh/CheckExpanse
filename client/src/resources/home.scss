@@ -1,0 +1,107 @@
+@import "./global.scss";
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 2px gray;
+    padding: 13px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    .left{
+        flex: 0.8;
+        display: flex;
+        justify-content: flex-start;
+        .column{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            margin-right: 8vw;
+            h5{
+                margin: 0 0 8px 0;
+                padding: 0;
+                font-weight: 500;
+                font-size: 17px;
+            }
+            .select{
+                width: 120%;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .right{
+        flex: 0.2;
+        display: flex;
+        justify-content: flex-end;
+        .charts{
+            background-color: transparent;
+            margin-right: 4vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width:80px;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 7px 0;
+        }
+        button{
+            position: relative;
+            right:0;
+            width: 120px;
+        }
+    }
+}
+.table-analytics{
+    align-items: center;
+    box-shadow: 0 0 2px gray;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+.trform label{
+     color: rgba(0, 0, 0, 0.734) !important;
+}
+.submit{
+    display: flex;
+    justify-content: end;
+}
+.w{
+    width: 100%;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.add{
+    border-radius: 5px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.edit{
+    margin-right: 15px;
+}
+.anticon svg{
+    font-size: 20px;
+}
+.active-icon{
+    color: black;
+}
+.inactive-icon{
+    color: gray;
+}
+.ant-pageination-item a{
+    color: black !important;
+}
+.trform input{
+    border: 1px solid gray;
+    border-bottom: 1px solid gray;
+    box-shadow: none !important;
+}
+.ant-select-selector{
+    border: 1px solid gray !important;
+}
+.ant-select-selector:focus{
+    box-shadow:none !important;
+    outline: none !important;
+}

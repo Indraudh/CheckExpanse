@@ -1,0 +1,53 @@
+@import "./global.scss";
+
+.layout{
+    margin: 0 100px;
+}
+.header{
+    // background-color: rgb(32, 153, 32);
+    padding:14px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.659);
+    margin: 0;
+}
+.username{
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.659);
+    margin: 0;
+}
+.content{
+    min-height: 85vh;
+    box-shadow: 0 0 3px gray;
+    margin-top: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 15px;
+}
+h1{
+    font-weight: 400;
+}
+.spinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.ant-spin-dot-item{
+    background-color: gray !important;
+}
+
+@media only screen and (max-width: 700px){
+    .layout{
+        margin:0 15px;
+    }
+}
