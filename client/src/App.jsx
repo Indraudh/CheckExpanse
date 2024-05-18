@@ -2,7 +2,6 @@ import React from 'react';
 import "./App.scss";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Test from "./pages/Test";
 import Login from "./pages/login";
 import Register from "./pages/register";
 function App() {
@@ -14,7 +13,6 @@ function App() {
         <Routes>
 
           <Route path='/' element={<ProtectedRoute><Home/></ProtectedRoute>}/>
-          <Route path='/test' element={<ProtectedRoute><Test/></ProtectedRoute>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/register' element={<Register/>}/>
 

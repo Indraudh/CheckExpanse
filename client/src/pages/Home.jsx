@@ -5,7 +5,7 @@ import { message, Select, Table, } from "antd";
 import axios from "axios";
 import Spinner from '../components/Spinner';
 import moment from 'moment';
-import { DatePicker, Space } from 'antd';
+import { DatePicker } from 'antd';
 import Analytics from "../components/Analytics";
 import AddEditTransactions from "../components/AddEditTransactions";
 import {
@@ -14,7 +14,6 @@ import {
   EditOutlined,
   DeleteOutlined,
 } from "@ant-design/icons";
-import { Footer } from "antd/lib/layout/layout";
 export default function Home() {
   const { RangePicker } = DatePicker;
   const [showtr,setshowtr]= useState(false);
